@@ -1,4 +1,4 @@
-const execa = require('execa')
+import execa from 'execa'
 
 execa("termux-wifi-scanifno", []).then(function (result) {
     if (result.stderr) return reject(result.stderr)
