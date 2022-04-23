@@ -1,3 +1,3 @@
-const execa = require("execa")
+import {execa} from 'execa';
 
 execa("echo", ['Hello World!'])
