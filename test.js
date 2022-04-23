@@ -1,3 +1,4 @@
 import {execa} from 'execa';
 
-execa("echo", ['Hello World!'])
+const {stdout} = execa("echo", ['Hello World!'])
+console.log(stdout)
